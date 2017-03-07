@@ -1,0 +1,32 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["eslint:recommended"],
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "modules": true,
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "no-unused-vars": [2, {"varsIgnorePattern": "(^_|log)", "args": "all", "argsIgnorePattern": "(^_|^req$|^res$|^next$)"}],
+    "no-console": 0,
+    "no-constant-condition": 0,
+    "semi": ["error", "always"],
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "no-class-assign": 0
+  }
+}
