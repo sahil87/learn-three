@@ -1,4 +1,2 @@
-let a = 'test3';
-
-
-console.log(a);
+// require('./simple-sphere');
+require('./scene');
