@@ -1,2 +1,2 @@
-// require('./simple-sphere');
-require('./scene');
+require('./simple-sphere');
+//require('./scene');
