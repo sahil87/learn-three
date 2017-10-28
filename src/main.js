@@ -1,2 +1,3 @@
-//require('./simple-sphere');
-require('./three-spheres');
+// require('./simple-sphere');
+// require('./rotating-cube');
+require('./geometry-experiments');

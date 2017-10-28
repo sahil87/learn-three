@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "browserify src/main.js -t babelify --presets [es2015] > build/main.js && npm run build-three",
-    "watch": "npm run build-three && watchify src/main.js -t babelify --presets [es2015] -o build/main.js",
+    "watch": "watchify src/main.js -t babelify --presets [es2015] -o build/main.js",
     "budo": "budo src/main.js:build/main.js -l -o -- -t babelify --presets [es2015] -o build/main.js",
     "build-three": "rollup -c three/rollup.config.js",
     "build-uglify": "rollup -c three/rollup.config.js && uglifyjs build/three.js -cm --preamble \"// threejs.org/license\" > build/three.min.js",
